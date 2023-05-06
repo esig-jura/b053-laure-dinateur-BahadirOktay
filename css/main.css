@@ -3,30 +3,15 @@
 }
 
 body {
-    font-family: Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 120%;
+    background-color: #fdfffc;
+    color: #011627;
+    font-size: 100%;
     line-height: 1.4;
-    color: #000000;
-    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
-a {
-    color: #00A24B;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #E8A062;
-}
-
-h1,
-h2 {
-    font-family: Georgia, serif;
+h1, h2, h3 {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
 }
