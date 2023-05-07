@@ -89,7 +89,7 @@ L'entête se compose d'un **logo texte** et d'un **menu de navigation**
   intérieure et en l'un à côté de l'autre (en ligne)** `display:inline-block;`
 * Pour faciliter la sélection des liens `<a>` sur mobile
   * sont affichés en gras (800)
-  * sont espacés de `30px` 
+  * sont espacés de `30px`
   * ont une marge intérieure de `15px` haut/bas et `10px` gauche/droite
 * La couleur du texte des liens devient bleue `#2ec4b6` lorsqu'ils sont
   survolés `:hover`.
