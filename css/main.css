@@ -3,31 +3,44 @@
     box-sizing: border-box;
 }
 
+/************* Structure générale du site ***********/
 body {
     /* Couleur d'arrière-plan et couleur du texte */
     background-color: #fdfffc;
+    /* Couleur du texte */
     color: #011627;
+    /* Tailles du texte */
     font-size: 100%;
+    /* Hauteur de ligne */
     line-height: 1.4;
     /* Police du texte */
     font-family: 'Open Sans', sans-serif;
+    /* épaisseur de texte */
+    font-weight: 400;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    /* Police des titres */
+    font-family: 'Changa One', cursive;
+    /* épaisseur des titres */
     font-weight: 400;
 }
 
-h1, h2 {
-    /* Police des titres */
-    font-family: 'Changa One', cursive;
-    font-weight: 400;
-}
-/* Tailles des titres de niveau 1 et 2 et marge extérieure */
 h1 {
+    /* Tailles des titres de niveau 1 */
     font-size: 2rem;
-    margin-bottom: 1em;
+    /* Marge extérieure en bas */
+    margin-bottom: 1em; /* margin 0 0 1em 0; */
 }
 
 h2 {
+    /* Tailles des titres de niveau 2 */
     font-size: 1.5rem;
-    margin-bottom: 0.75em;
+    /* Marge extérieure en bas */
+    margin-bottom: 0.75em; /* margin 0 0 75em 0; */
 }
 /* Hauteur de ligne des paragraphes */
 p {
@@ -35,88 +48,96 @@ p {
 }
 /* Styles des liens */
 a {
+    /* Couleur des liens */
     color: #e71d36;
+    /* Les liens du site ne sont pas soulignés */
     text-decoration: none;
 }
-/* Entête avec logo et menu de navigation */
+
+/********** Entête de site **********/
 header {
     text-align: center;
     background-color: black;
     padding-top: 5px;
     margin-bottom: 30px;
 }
-/* Logo texte */
-header .logo .nom {
-    font-size: 1.75rem;
+
+header .nom {
+    color: #2ec4b6;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 400;
+    font-size: 1.75em;
     line-height: 0.8;
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
-header .logo .metier {
+header .metier {
     margin-top: -5px;
 }
+
 /* Menu de navigation */
-nav {
+header nav {
     padding-top: 10px;
     margin-top: 20px;
 }
 
-nav ul {
+header nav ul {
     padding: 0;
     margin: 0 10px;
 }
 
-nav li {
+header nav ul li {
+    list-style-type: none;
+    padding: 0;
     display: inline-block;
-    list-style: none;
 }
-/* pour annuler la marge à droite du dernier élément de la liste <li>,
-pour éviter un espace supplémentaire à droite du dernier lien du menu */
-nav li:last-child {
-    margin-right: 0;
+/* Cache le 1er li de la ul */
+header nav ul li:first-child {
+    display: none;
 }
 
-nav a {
+header nav ul li a {
+    color: #fdfffc;
     font-weight: 800;
-    /* Ajoute un espacement à droite de chaque lien <a> */
     margin-right: 30px;
     padding: 15px 10px;
-    /* Retire le soulignement des liens */
-    text-decoration: none;
 }
 
-nav a:hover {
+header nav ul li a:hover {
     color: #2ec4b6;
 }
-/* Contenu principal */
+
+/********** Contenu principal du site *********/
 main {
     margin: 0 5%;
 }
-/* Pied de page */
+
+/******** Pied de page du site */
 footer {
     padding-top: 50px;
     text-align: center;
 }
 
 footer nav ul {
+    padding: 0;
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
-footer nav li {
-    display: inline-block;
+footer nav ul li {
     list-style-image: none;
+    display: inline-block;
     margin: 0 15px;
 }
 
-footer nav img {
+footer nav ul li img {
     width: 50px;
+    margin: 0 15px;
     filter: grayscale(1);
     transition: filter 500ms linear;
 }
 
-footer nav img:hover {
+footer nav ul li img:hover {
     filter: grayscale(0);
 }
 
