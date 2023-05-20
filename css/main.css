@@ -138,6 +138,17 @@ main p {
     margin-left: 500px;
 }
 
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+main ul li img {
+    width: 24px;
+    height: auto;
+}
+
 /******** Pied de page du site */
 footer {
     padding-top: 50px;
