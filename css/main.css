@@ -153,6 +153,12 @@ main ul li img {
     height: auto;
 }
 
+main #contact-title,
+main .contact-paragraph {
+    text-align: left;
+    padding-left: 0;
+}
+
 /******** Pied de page du site */
 footer {
     padding-top: 50px;
