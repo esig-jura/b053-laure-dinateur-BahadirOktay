@@ -153,8 +153,25 @@ main ul li img {
     height: auto;
 }
 
-main #contact-title,
-main .contact-paragraph {
+#contact-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+#infos {
+    width: 25%;
+    margin-left: 25%;
+    padding: 10px 0 0;
+}
+
+#contact {
+    width: 45%;
+    padding: 90px 0 0;
+}
+
+#contact-title,
+.contact-paragraph {
     text-align: left;
     padding-left: 0;
 }
