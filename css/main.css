@@ -26,6 +26,12 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
 h1,
 h2,
 h3 {
@@ -141,11 +147,6 @@ main ul li {
     padding-left: 5px;
 }
 
-main ul li img {
-    width: 24px;
-    height: auto;
-}
-
 /******** Pied de page du site */
 footer {
     padding-top: 50px;
@@ -238,4 +239,34 @@ footer nav ul li img:hover {
 }
 
 /********* page-accueil ********/
+.page-accueil .realisation {
+    /* Supprimer style de base de la liste à puce */
+    padding: 0; /* Supprimer la marge par default des listes */
+    list-style-type: none; /* Supprimer les puces */
 
+    /* Active Flex */
+    display: flex;
+    flex-direction: row;  /* Affichage en colonne */
+    flex-wrap: wrap;  /* Active le retour à la ligne  */
+
+    /* Alignement des éléments */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.page-accueil .realisation li {
+    padding: 1rem 1%;
+    flex-basis: calc(50%); /* Taille des éléments */
+    flex-grow: 2;  /* Peut prendre la place de deux éléments si libre */
+    flex-shrink: 1;  /* Au minimum doit faire la tailler de 1 col */
+}
+
+.page-accueil .realisation li figure {
+    margin: 0; /* Supprime la marge par défaut des <figure> */
+    background-color: #e7e9eb;
+}
+
+.page-accueil .realisation li figcaption {
+    padding: 10px;
+}
